@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="container-login100">
+			<div class="wrap-login100 p-t-30 p-b-50">
+				<span class="login100-form-title p-b-41">
+					Sign Up Form
+				</span>
+				<form action="{{url_for('showSignUp')}}" method="post" class="login100-form validate-form p-b-33 p-t-5">
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="username" name="inputName" placeholder="User Name">
+						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                    </div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="email"name="inputEmail" placeholder="e-mail">
+						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="password" name="inputPassword" placeholder="Password">
+						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+					</div>
+					
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="confirmPassword" name="inputConfirmPassword" placeholder="Confirm Password">
+						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                    </div>
+
+
+
+					<div class="container-login100-form-btn m-t-32">
+						<button class="login100-form-btn">
+							Sign Up
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+{% endblock content %}
