@@ -2,11 +2,10 @@
 <html>
    <body>
       <table border = 1>
-         {% for key, value in result.iteritems() %}
+         {% for key in result.keys()%}
             <tr>
                <th> {{ key }} </th>
-               <td> {{ value }} </td>
-            </tr>
+               <th> {{ result[key] }} </th>
          {% endfor %}
       </table>
    </body>
