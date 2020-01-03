@@ -15,8 +15,15 @@
   src: url('../fonts/ubuntu/Ubuntu-Bold.ttf'); 
 }
 
+/*//////////////////////////////////////////////////////////////////
+[ FLASH MESSAGES CUSTOM CATEGORIES ]*/
 
+.succes_register {
 
+  color: white;
+  background: green;
+  
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
