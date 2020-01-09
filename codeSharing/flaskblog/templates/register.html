@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action=""><!--quando postiamo questo form andiamo nella stessa route del post-->
+            {{ form.hidden_tag() }}<!--questo tag riguarda la protezione della password-->
+            <fieldset class="form-group"><!--sono classi dell css?-->
+                <legend class="border-bottom mb-4">Join Today</legend><!--legend è per il nostro form Register-->
+                <div class="form-group"><!--sono i form che passiamo in html-->
+                    {{ form.username.label(class="form-control-label") }}<!--stiamo passando gli argomenti della classe form in stampa a video --mb significa margin botton e 4 è il valore-->
+
+                    {% if form.username.errors %}<!--nel caso vengano inseriti dati errati dallo user-->
+                        {{ form.username(class="form-control form-control-lg is-invalid") }}<!--lg significa large-->
+                        <div class="invalid-feedback">
+                            {% for error in form.username.errors %}<!--mostra tutti gli errori-->
+                                <span>{{ error }}</span><!--qui si vede l'errore-->
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.username(class="form-control form-control-lg") }}<!--else nessun errore-->
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.email.label(class="form-control-label") }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.password.label(class="form-control-label") }}
+                    {% if form.password.errors %}
+                        {{ form.password(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.password(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form.confirm_password.label(class="form-control-label") }}
+                    {% if form.confirm_password.errors %}
+                        {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.confirm_password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.confirm_password(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }} <!--btn è il pulsante per il submit--> 
+            </div>
+        </form>
+    </div>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Already Have An Account? <a class="ml-2" href="{{ url_for('login') }}">Sign In</a><!--è il collegamento alla pagina login nel caso sia gia stata fatta la registrazione login è il nome della funzione presente in app_py ossia passa da li-->
+        </small>
+    </div>
+{% endblock content %}
