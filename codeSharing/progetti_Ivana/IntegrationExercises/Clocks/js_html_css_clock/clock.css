@@ -1,0 +1,29 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-image: url("fixedbg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10px;
+    margin: 0;
+  }
+  table {    
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+    }
+td {
+    vertical-align: middle;
+    color: bisque;
+    font-family: 'Lucida Sans';
+    font-size: 60pt;
+    text-shadow: 10px 10px 10px black;
+    font-weight: bolder; 
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+    }

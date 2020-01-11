@@ -1,0 +1,160 @@
+/*Gradients & Background*/
+
+h1 {
+    background-color: rgb(141, 209, 141);
+    color: black;
+    padding: 50px;
+
+ }
+
+div {
+    min-height: 90px;
+ }
+    /*gradients enable you to display 
+    smooth transitions between 
+    two or more specified colors. 
+    
+    CSS3 defines two types of gradients: 
+    Linear and Radial. */
+
+/*Linear Gradients*/
+
+    div.linear_gradient {
+        float: left;
+        width: 300px; 
+        height: 100px;
+        margin: 4px;
+        color: #FFF;
+        text-align: center;  
+        font-weight: bolder;
+        background:linear-gradient(DeepSkyBlue, Black);
+     }
+
+    /*olors can be added one after the other,
+     separated with a comma. */
+     
+    div.multiple_linear_gradient {
+        background:-moz-linear-gradient(blue, 
+            yellow, green, pink, white);
+        width: 260px;
+        height: 260px;
+        border-radius: 130px;
+        color: white;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+     }
+
+    /*Color stop positions can be specified for each color.
+     In addition to percentages, you can also use px, em, and so on,
+     to specify the color stops.
+     If you use the same color stop position for two colors,
+     a sharp line will be created between them.*/
+
+    div.specified_linear_gradient {
+        background:-moz-linear-gradient(blue 20%,
+             yellow 30%, green 85%);
+        border-radius: 20px;
+        width: 300px; 
+        height: 100px;
+        background-color: green;
+        color: black;
+        font-weight: bolder;
+        padding: 50px;
+    }
+
+    /*The direction of the gradient can be changed.
+     left, right, top, and bottom 
+     are supported values for the gradient direction.
+     You can also use their various combinations 
+     (e.g., bottom right)*/
+
+    div.left_linear_gradient {
+        float: left;
+        width: 300px; 
+        height: 100px;
+        margin: 4px;
+        color: #FFF;  
+        background:-moz-linear-gradient(left, blue,
+             green, white);
+     } 
+
+    div.bottom_linear_gradient { 
+        float: left;
+        width: 300px; 
+        height: 100px;
+        margin: 4px;
+        background:-moz-linear-gradient(bottom, blue,
+             green, white);
+     }
+
+    /* you can control the gradient's direction 
+     by specifying an angle.
+     
+     The angle is specified as 
+     an angle extending between a horizontal line 
+     and the gradient line. 
+     - 0deg creates a left-to right-gradient
+     - 90deg generates a bottom-to-top gradient.*/
+
+    div.linear_gradient_100deg {
+        float: left;
+        width: 300px; 
+        height: 100px;
+        margin: 4px;
+        background:-moz-linear-gradient(100deg, blue, green, white);
+     }
+
+    /*The repeating-linear-gradient() function
+    is used to repeat a linear gradient. */
+
+    div.repeated_linear_gradient {
+        float: left;
+        width: 300px; 
+        height: 100px;
+        margin: 4px;
+        color: white;
+        background:-moz-repeating-linear-gradient(blue, green 20px);
+     }
+    
+/*Radial Gradients */
+
+    /*To create a radial gradient, 
+     you must define at least two color stops.
+     The radial gradient is defined by its center.
+     
+     -The first value defines the gradient position.
+      We can use a descriptive keyword, such as top, 
+      bottom, center, or left; 
+      or we can specify, for example, 
+      50% 50% to set the gradient at the center
+      or 0% 0% to set the gradient to start at top left.
+     
+     -The second value defines the shape and the gradient size. 
+      There are two arguments to shape gradients: 
+      The first is the ellipse, which is the default; 
+      and the second is the circle.
+
+     -The third value defines the color combination.*/
+
+
+
+    div.radial_gradient_ellipse {
+        height: 150px;
+        width: 200px;
+        font-weight: bolder;
+        color:black;
+        padding: 50px;
+        background: -moz-radial-gradient(green, yellow, blue);   
+     }
+    div.radial_gradient_circle {
+        width: 200px;
+        font-weight: bolder;
+        color:black;
+        padding: 50px;
+        background: -moz-radial-gradient(circle, green, yellow, blue); 
+     }
+
+
+
+

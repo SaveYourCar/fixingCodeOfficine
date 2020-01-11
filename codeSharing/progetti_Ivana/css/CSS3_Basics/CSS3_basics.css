@@ -1,0 +1,375 @@
+/*
+CSS3
+
+CSS3 is the latest standard for CSS.
+New Significant Feature:
+Border radius 
+    - allows us to create rounded corners for elements.
+Border images 
+    - allows us to specify an image as the border 
+      around an element.
+Multiple backgrounds 
+    - applies multiple backgrounds to elements.
+Box Shadow
+    - you can attach one or more shadows to an element 
+      by specifying values for color, size, blur, and offset.
+Gradients
+    - allow us to set the background color of the element
+      to a gradient. Two types of gradients are available: 
+      Linear and Radial.
+Transforms 
+    - allow you to rotate, scale, move, and skew elements. 
+Transitions 
+    - allows you to animate from one CSS property value 
+      to another. You can combine it with transforms 
+      and animate the element's position, rotation, or scale.
+Animations 
+    - they allow you to create keyframes, set duration, 
+      easing, and more.
+Effects, and much more! */
+
+/*CSS Vendor Prefixes*/
+
+/*Browser prefixes are used to add new features 
+that may not be part of the final and formal CSS specification. */
+
+.round {
+    -webkit-border-radius: 24px;
+    -moz-border-radius:24px;
+    border-radius: 24px;
+    border:1px solid green;
+    width:300px;
+    padding:25px;
+}
+
+/*The prefix is added to the property 
+to make it work in the unsupported browsers. 
+So, you might end up with multiple definitions 
+of the same property, each with the specific browser prefix.*/
+
+/*The border-radius Property*/
+
+.round2 {
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    padding: 50px;
+}
+
+/*Specific border radius values can be applied for the border-radius property in the following order:
+top-left, top-right, bottom-right, bottom-left. */
+
+.bottom_round {
+    border-radius: 0 0 20px 20px;
+    background-color: green;
+    color: white;
+    padding: 50px;
+}
+
+/*The value of border-radius can also be specified
+in percentages.*/
+
+/*A rectangle can be turned into a circle using only CSS.
+To create a circle, the border radius should be 
+half of the height and the width. */
+
+.circle {
+    width: 260px;
+    height: 260px;
+    border-radius: 130px;
+    background-color: green;
+    color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+ }
+
+ /*The box-shadow Property*/
+
+ /*box-shadow property applies shadow to elements.
+Components of the box-shadow property are decoded 
+by browsers in the following manner:
+- The first length for the horizontal offset 
+    will cast the shadow to the right of the box (required)
+- The second length is for the vertical offset 
+    will cast the shadow to below the box (required)
+- The color of the shadow (optional)*/
+
+.shadow {
+    width: 300px;
+    height: 100px;
+    background-color: #9ACD32;
+    box-shadow: 10px 10px #888888;
+ }
+
+/*There are also two optional values 
+for the box-shadow element, which are blur and spread.
+The blur and spread values should be used 
+before the color value. */
+
+.shadow_blur_spread {
+    width: 300px;
+    height: 100px;
+    background-color: #9ACD32;
+    box-shadow: 10px 10px 5px 5px #888888;
+}
+
+/*Negative values
+
+horizontal offset 
+    - the shadow will be to the left of the box
+vertical offset 
+    - the shadow will be above the box
+blur radius 
+    - negative values are not allowed
+spread radius 
+    - negative values will cause the shadow to shrink*/
+
+.negative{
+    width: 300px;
+    height: 100px;
+    background-color: #9ACD32;
+    box-shadow: -10px -10px 5px -5px #888888;
+}
+
+/*Box Shadow Techniques*/
+
+/*The "inset" keyword allows to draw an inner shadow in the box. 
+To show an inset shadow, just add the inset keyword.*/
+
+.inset {
+    white-space: pre-line;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+    height: 100px;
+    background-color: #9ACD32;
+    box-shadow: inset 10px 10px 5px #888888;
+}
+
+/*You can simultaneously create inner and outer shadows 
+by separating each shadow with a comma.*/
+
+.two_shadows {
+    white-space: pre-line;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    background-color: #9ACD32;
+    box-shadow: inset 10px 10px 5px #888888, inset -10px -10px 5px #888888;
+}
+
+/*In case we specify more than one value, 
+the one which comes last will be positioned 
+at the back of all shadows. */
+
+.three_shadows {
+    width: 300px;
+    height: 100px;
+    background-color: #9ACD32;
+    box-shadow: 0 0 10px 4px #FF6347, 0 0 10px 30px #FFDAB9, 30px 0 20px 30px #B0E0E6;
+
+    margin-left:30px;
+    margin-top:30px;
+}
+
+/*Transparency Effect*/
+
+/* CSS3 introduces the following:
+
+RGBA Colors
+RGBA color values are an extension of RGB color values
+with an alpha channel, which specifies the opacity for a color.
+An RGBA color value is specified with: 
+rgba(red, green, blue, alpha).
+The alpha parameter is a number between
+0.0 (fully transparent) and 1.0 (fully opaque).
+
+HSL (Hue, Saturation, Lightness) Colors
+An HSL color value is specified with:
+hsl(hue, saturation, lightness).
+Hue 
+is a degree on the color wheel ranging from 0 to 360
+0 (or 360) is red, 
+120 is green, 
+240 is blue.
+Saturation 
+is a percentage value: 
+100% is the full color.
+Lightness is also a percentage; 
+0% is dark (black) and 100% is white. 
+HSLA color values 
+are an extension of HSL color values 
+with an alpha channel 
+- which specifies the opacity for a color (just like RGBA).
+*/
+
+table {
+    background:url("https://images.unsplash.com/photo-1577220878509-320a0fba2be8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80");
+    background-size: cover;
+    width:100%;
+}
+
+nav {
+    padding: 50px 0;
+    min-width: 500px; 
+ }
+nav ul {
+    background: linear-gradient(90deg, 
+      rgba(255, 255, 255, 0) 0%, 
+      rgba(255, 255, 255, 0.2) 25%, 
+      rgba(255, 255, 255, 0.2) 75%, 
+      rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+      inset 0 0 1px rgba(255, 255, 255, 0.6);
+ }
+nav ul li {
+    display: inline-block;
+ }
+nav ul li a {
+    padding: 10px; 
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Arial;
+    text-decoration: none;
+    display: block;
+  }
+
+/*The text-shadow Property*/
+
+/*The text-shadow property defines one or more 
+comma-separated shadow effects, 
+to be applied to the text content of the current element.*/
+
+/*- The offset-x and offset-y values are required 
+- The color value is not required, 
+but since the default for the text-shadow is transparent, 
+the text-shadow will not appear unless
+you specify a color value.*/
+
+/*To create multiple shadows, 
+the shadows are separated with a comma.*/
+
+.multiple_shadows {
+    text-shadow: 5px 10px 2px #93968f, 
+       -3px 6px 5px #58d1e3;
+ }
+
+/*To make a text shadow look realistic:
+
+- A shadow which is close to the text is normally 
+    not as blurred and darker then a shadow that is far from the text.
+    A shadow that is far from the text usually implies
+    a light source which is also far from the text. 
+To remove a text-shadow, set the text-shadow property to none.
+*/
+
+/*Pseudo Classes*/
+
+/*The CSS pseudo-classes allow us to style elements, 
+or parts of elements, that exist in the document tree
+without using JavaScript or any other scripts. 
+A pseudo-class starts with a ":" (colon).
+The most commonly used pseudo-classes are :
+first-child and :last-child.
+
+The :first-child pseudo-class matches an element 
+that is the first child element of some other element. */
+
+#parent p:first-child {
+    color: green;
+    text-decoration: underline;   
+ }
+
+/*The :last-child pseudo-class matches an element 
+that is the last child element of some other element.
+*/
+
+ #parent2 p:last-child {
+    color: green;
+    text-decoration: underline;   
+ }
+
+/*Pseudo Elements*/
+
+/*
+Pseudo elements are used to select 
+specific parts of an element.
+There are five pseudo elements in CSS,
+each starting with a double colon (::):
+
+::first-line - the first line of the text in a selector
+::first-letter - the first letter of the text in a selector
+::selection - selects the portion of an element 
+              that is selected by a user
+::before - inserts some content before an element
+::after - inserts some content after an element*/
+
+p.first_line::first-line {
+    color: #589432;
+ }
+
+p.selection::selection {
+    background: #8bc34a;
+    color: #fff;
+ }
+
+p.before_image::before {
+    content: url("https://images.unsplash.com/photo-1577255714682-69db9b067fda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+ }
+  /*Note the content keyword in the syntax.*/
+/*If you change the ::before element to 
+::after in the example above, 
+the images will appear at the end of the list.*/
+
+/*The word-wrap property*/
+/* allows long words to be broken 
+and wrapped into the next line. 
+It takes two values: normal and break-word. */
+
+p.word_wrap_normal {
+    width: 210px; 
+    height: 130px;
+    border: 1px solid #000000;
+    word-wrap: normal;
+ }
+
+p.word_wrap_break_word {
+    width: 210px; 
+    height: 130px;
+    border: 1px solid #000000;
+    word-wrap: break-word;
+ }
+
+/*The @font-face Rule*/
+
+/*The @font-face rule allows custom fonts to be loaded 
+into a webpage.
+With the help of this rule, designs are no longer limited 
+to the fonts that are installed on a user's computer. 
+
+In Internet Explorer 8 and earlier,
+the URL must point to an Embedded OpenType (eot) file,
+while Firefox, Chrome, etc. support True Type Fonts (ttf) 
+fonts and OpenType Fonts (otf). */
+
+/*In the @font-face rule,
+you must first define a name for the font 
+(e.g., myFirstFont), and then point to the font file.*/
+
+@font-face {
+    font-family: "Mutlu"; 
+    src: url('mutlu.ttf'); 
+  } 
+.ttf_font{
+    font-family: Mutlu, italic; 
+ }
+@font-face { 
+    font-family: "Allura"; 
+    font-weight: bold; 
+    src: url('allura.otf'); 
+  }*/
+.otf_font{
+    font-family: Allura, italic; 
+ }

@@ -1,0 +1,110 @@
+<html>
+    <head> 
+        <title>Gradients & Background</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="gradients_and_background.css">
+        <h1>Linear Gradients</h1>
+            <p>
+            <h2>
+                background: 
+                linear-gradient
+                (color-top, color-bottom);
+            </h2>
+            </p>
+            <div class="linear_gradient">
+                 In this example, 
+                 the colors blue and black
+                 are used to create a linear gradient 
+                 from top to bottom.
+            </div>
+            <p>
+            <h2>
+                background:
+                -moz-linear-gradient
+                (color-top, color-stop, color-bottom);
+            </h2>
+            </p>            
+            <div class="multiple_linear_gradient">
+                In this example, 
+                the linear gradient has multiple color stops 
+                and runs from top to bottom. 
+            </div>            
+            <p>
+            <h2>
+                background:-moz-linear-gradient
+                (color-top value%, color-stop value%, 
+                color-bottom value%);
+            </h2>
+            </p> 
+            <div class="specified_linear_gradient">
+                In this example, 
+                the linear gradient has multiple color stops 
+                and their position is specified. 
+            </div>                
+            <p>
+            <h2>
+                background:
+                -moz-linear-gradient(left, 
+                color-top, color-stop, color-bottom);
+            </h2>
+            </p>              
+            <div class="left_linear_gradient">
+                In this example, 
+                the linear gradient has multiple color stops 
+                and they move from left to right.
+            </div>             
+            <h2>
+                background:
+                -moz-linear-gradient(bottom, 
+                color-top, color-stop, color-bottom);
+            </h2>
+            </p>             
+             <div class="bottom_linear_gradient">
+                In this example, 
+                the linear gradient has multiple color stops 
+                and they move from the bottom to the top. 
+            </div>             
+            <p>
+            <h2>
+                background:
+                -moz-linear-gradient 
+                (value_deg, color-top, color-stop, color-bottom);
+            </h2>
+            </p>   
+            <div class="linear_gradient_100deg">
+                In this example, 
+                the linear gradient has 
+                an angle of 100deg. 
+            </div>             
+            <p>
+            <h2>
+                background:
+                -moz-repeating-linear-gradient
+                (color-top, color-stop, color-bottom);
+            </h2>
+            </p>   
+            <div class="repeated_linear_gradient">
+                In this example, 
+                the linear gradient is 
+                repeated. 
+            </div>
+            <div class="break"></div>
+            <h1>Radial Gradients</h1>        
+            <h2>
+                background: 
+                radial-gradient
+                (position, shape or size, color-stops);
+            </h2>
+            </p>   
+            <div class="radial_gradient_ellipse">
+                In this example, we didn't specify the shape 
+                of the radial gradient.
+                So it will take the ellipse value by default.
+            </div>            
+            <div class="radial_gradient_circle">
+                In this example, we specify the shape 
+                of the radial gradient.
+            </div>
+    </body>
+</html>

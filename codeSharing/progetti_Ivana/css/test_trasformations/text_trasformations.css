@@ -1,0 +1,95 @@
+/*The text-decoration Property*/
+ p.none {
+    text-decoration: none;
+ }
+ p.inherit {
+    text-decoration: inherit;
+ }
+ p.overline {
+    text-decoration: overline;
+ }
+ .underline {
+    text-decoration: underline;
+ }
+ p.line-through {
+    text-decoration: line-through;
+ }
+ p.multiple-lines {
+    text-decoration: underline overline;
+ }
+ p.blink {
+    text-decoration: blink; 
+ }
+/*The text-shadow Property*/
+ h2 {
+    color: blue;
+    font-size: 30pt;
+    text-shadow: 5px 2px 4px grey;
+ }
+    /*It takes four values: 
+        - the first value defines the distance of the shadow in the x direction,
+        - the second value sets the distance in the y (vertical) direction,
+        - the third value defines the blur of the shadow,
+        - the fourth value sets the color.
+      To add more than one shadow to the text, 
+      add a comma-separated list of shadows.*/
+ h3 {
+    color: blue;
+    font-size: 30pt;
+    text-shadow: 5px 2px 4px grey, -5px -2px 4px black ;
+ }
+ h4 {
+    font-size: 20pt;   
+    text-shadow: rgba(0,0,255,1) -1px -2px 0.5em; 
+ }
+/*The text-transform Property*/
+ p.capitalize {
+    text-transform: capitalize;
+ }
+ p.uppercase {
+    text-transform: uppercase;
+ }
+ p.lowercase {
+    text-transform: lowercase;
+ }
+/*The letter-spacing Property*/
+ p.normal { 
+    letter-spacing: normal; 
+ }
+ p.positive { 
+    letter-spacing: 4px; 
+ }
+ p.negative { 
+    letter-spacing: -1.5px; 
+ } 
+/*The word-spacing Property*/
+ p.normal { 
+    word-spacing: normal;
+ }
+ p.px { 
+    word-spacing: 30px;
+ }
+ p.negative { 
+    word-spacing: -5px;
+ }
+/*The white-space Property*/
+ p {
+    white-space: nowrap;
+ }
+    /*The text will continue on the same line until
+     a <br /> tag is encountered. */
+ p.pre {
+   white-space: pre;
+ }
+ p.preline {
+   white-space: pre-line;
+ }
+ p.prewrap {
+   white-space: pre-wrap;
+ }
+    /*pre - text will only wrap on line breaks and white space
+    pre-line - text will wrap where there is a break in code, but extra white space is still ignored
+    pre-wrap - text will wrap when necessary, and on line breaks
+    N.B. Pre-wrap value behaves as the pre value, 
+    except that it adds extra line breaks 
+    to prevent the text breaking out of the element's box.*/
