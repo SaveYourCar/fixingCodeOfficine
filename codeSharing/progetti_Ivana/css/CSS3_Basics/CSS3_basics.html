@@ -1,0 +1,131 @@
+<html>
+   <head> 
+    <title>CSS3 Basics</title>
+   </head>
+   <body>
+    <link rel="stylesheet" href="CSS3_basics.css">
+    <h1>CSS Vendor Prefixes</h1>
+    <div class="round">
+        To specify the border-radius in Chrome and Safari,
+        the following syntax is used:<br>
+        <strong>-webkit-border-radius: 24px;</strong><br>
+        To specify the border-radius in Mozilla,
+        the following syntax is used:<br>
+        <strong>-moz-border-radius: 24px;</strong>
+    </div>
+<h1>The border-radius Property</h1>
+    <strong>border-radius: -value-px;</strong>
+    <div class="round2">
+        you can give any element "rounded corners" 
+        by using the 
+        border-radius property.
+    </div>
+    <strong>border-radius: top-left_px top-right_px bottom-right_px bottom-left_px ;</strong>
+    <div class="bottom_round">
+        Specific border radius values can be applied 
+        for the border-radius property
+    </div>
+    <div class="circle">
+        The rectangle in this example has a 
+        width and height of 260px. 
+        By setting the border radius to 130px, 
+        the corners got rounded 
+        to form a circle.
+    </div>
+<h1>The box-shadow Property</h1>
+    <strong>box-shadow: horizontal_offset_px  vertical_offset_px #color;</strong>
+    <div class="shadow">
+        In this example, the horizontal and vertical offsets
+        have been set to 10px.
+    </div><br>
+    <div class="shadow_blur_spread">
+        In this example, the blur and spread values
+        have been set to 5px.
+    </div><br><br>
+    <div class="negative">
+        In this example, the values of horizontal,vertical offsets and spread 
+        are negative.
+    </div>
+<h1>Box Shadow Techniques</h1>
+    <strong>box-shadow: inset horizontal_offset_px  vertical_offset_px #color;</strong>
+    <div class="inset">
+        In this example, the shadow conteins the inset keyword.
+    </div><br>
+    <div class="two_shadows">
+        In this example, two inner shadows have been created
+        by separating each shadow with a comma. 
+    </div><br>
+    <div class="three_shadows">
+        In this example, three inner shadows have been created.
+        The last is positioned at the back of all shadows. 
+    </div>
+<h1>Transparency Effect</h1>
+<table>
+    <tr>
+      <th>
+        <nav>
+            <ul>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">DISCUSS</a></li>
+                <li><a href="#">TOP LEARNERS</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </nav>
+      </th>
+    </tr>
+    <tr>
+      <td>In this example, 
+          a transparent glass menu bar is created with CSS3.
+      </td>
+    </tr>
+  </table>
+<h1>text-shadow</h1>
+    <strong>text-shadow: left_px bottom_px blur_px color;</strong>
+    <h3 class="multiple_shadows">This text has two shadows</h3>
+<h1>Pseudo Classes</h1>
+  <strong>:first-child and :last-child</strong>
+    <div id="parent">
+        <p>This first child paragraph is underlined,</p>
+        <p>because in this example</p>
+        <p>the selector matches any &ltp&gt element </p>
+        <p>that is the last child of the div element.</p>
+    </div><br>
+    <div id="parent2">
+        <p>The last child paragraph is underlined,</p>
+        <p>because in this example</p>
+        <p>the selector matches any &ltp&gt element </p>
+        <p>that is the first child of the div element.</p>
+    </div>
+<h1>Pseudo Elements</h1>
+    <strong>::first-line ::first-letter ::selection ::before ::after</strong>
+    <p class="first_line">
+        This example demonstrates how to use the 
+        <strong>::first-line</strong> element to add special effect 
+        to the first line of elements in the document.
+    </p>
+    <p class="selection">
+        The following example demonstrates how to use 
+        the <strong>::selection</strong> element to change the color of
+         the selected text.
+    </p>
+    <p class="before_image">You can insert text, images, 
+        and other resources using 
+        <strong>:before </strong>
+        pseudo element.
+    </p>
+<h1>The word-wrap Property</h1>
+<strong> word-wrap: normal;</strong>
+<p class="word_wrap_normal">This paragraph has a long word:
+    thisisaverylongwordbutyoucantfinditinthedictionary.
+    This word can't fit because 
+    the word-wrap property is set to normal.
+</p>
+<strong> word-wrap: break-word;</strong>
+<p class="word_wrap_break_word">This paragraph has a long word:
+    thisisaverylongwordbutyoucantfinditinthedictionary.
+    This word fit because 
+    the word-wrap property is set to break-word.
+</p>
+<h1 class="ttf_font">Custom Styled Text</h1>
+<h1 class="otf_font">Custom Styled Text</h1>
+</html>

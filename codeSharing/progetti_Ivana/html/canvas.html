@@ -1,0 +1,54 @@
+<html>
+   <head></head>
+   <body>
+     <canvas id="canvas1" 
+   width="800" height="800"></canvas> 
+
+   <script>
+      var can = document.getElementById("canvas1"); 
+      var ctx = can.getContext("2d");
+      var c=document.getElementById("canvas1");
+      var ctx=c.getContext("2d");
+      ctx.fillRect(20,20,100,100);
+
+      var canvas=document.getElementById("canvas1");
+      var ctx=canvas.getContext("2d");
+      ctx.fillStyle ="rgba(0, 200, 0, 1)";
+      ctx.fillRect (100, 10, 22, 22);
+
+      ctx.font="bold 24px Tahoma";
+      ctx.textAlign="start";
+      ctx.fillText("start", 10, 30);
+
+      ctx.translate(300, 150);
+
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(10,10, 100, 100);
+
+      ctx.rotate( (Math.PI / 180) * 25);  //rotate 25 degrees.
+
+      ctx.fillStyle = "#0000FF";
+      ctx.fillRect(10,10, 100, 100);
+      
+      ctx.translate(400, 250);
+      ctx.fillText("after translate", 10, 30);
+
+      var canvas = document.getElementById('canvas1');
+        ctx =canvas.getContext('2d');
+        ctx.font="bold 22px Tahoma";
+        ctx.textAlign="start";
+        ctx.fillText("start", 100, 50);
+        ctx.translate(-100, -150);
+        ctx.fillText("after translate", 0, 0);
+        ctx.rotate(1);
+        ctx.fillText("after rotate", 0, 0);
+        ctx.scale(1.5, 4);
+        ctx.fillText("after scale", 0,20);
+   </script>
+
+   
+
+
+
+   </body>
+</html>

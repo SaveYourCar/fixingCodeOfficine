@@ -1,0 +1,273 @@
+/*The Display Property*/
+
+/*The display property determines how that rectangular box behaves. 
+A block element is an element that takes up the fullest width available,
+with line breaks before and after.*/
+span {
+    display:block;
+ }
+
+/*An inline element only takes up as much width as necessary,
+and does not force line breaks.*/ 
+p.inline {
+    display: inline;
+ }
+
+/*an inline element with display:block 
+is not allowed to have other block elements inside it.*/
+
+/*With display:none, the element will be hidden, 
+and the page will be displayed as if the element is not there.
+display:none hides an element, without holding a place for that element.
+*/
+
+h2 {
+    display: none;
+ }
+
+/*There are plenty of other display values, such as 
+list-item,
+table,
+table-cell, 
+table-column, 
+grid,
+etc. */
+
+/*The visibility Property*/
+
+/*The visibility property specifies whether an element is visible or hidden. 
+The most common values are visible and hidden. */
+
+/*visibility:hidden hides an element, 
+but it will still take up the same space as before.
+The element will be hidden, but it will still affect the layout*/
+div.hidden {
+    visibility: hidden;
+ }
+
+/*Positioning Elements*/
+
+/*Elements can be positioned using the
+top, bottom, left, and right properties. 
+However, these properties will not work 
+unless the position property is set first.
+They also work differently depending on the positioning method.*/
+
+/* position:static;
+HTML elements are positioned static by default. 
+A static positioned element is always positioned 
+according to the normal flow of the page.*/
+
+p.position_static {
+    position:static;
+    top: 30px;
+    right: 5px;
+    color: red;
+ }
+
+/*Static positioned elements are not affected by the 
+top, bottom, left, and right properties*/
+
+/*Fixed Positioning*/
+
+/*An element with a fixed position 
+is positioned relative to the browser window, 
+and will not move even if the window is scrolled.*/
+
+p.position_fixed {
+    position: fixed;
+    top: 600px;
+    left: 800px;
+    color: red;
+ }
+
+/*Fixed positioned elements are removed from the normal flow. 
+The document and other elements behave like 
+the fixed positioned element does not exist.
+Fixed positioned elements can overlap other elements.*/
+
+/*Relative Positioning*/
+
+/*A relative positioned element is positioned relative to its normal position.
+The properties top, right, bottom, and left 
+can be used to specify how the rendered box will be shifted. */
+
+div.hidden_for_relative {
+    visibility: hidden;
+    min-height: 300px;
+ }
+
+p.fixed_for_relative {
+    width: 350px;
+    border: 1px black solid;
+    position: fixed;
+ }
+ span.relative {
+    background: green;
+    color:white;
+    position: relative;
+    top: 70px;
+    left: 50px;
+ }
+
+/*The content of relatively positioned elements
+can be moved and overlap other elements, 
+but the reserved space for the element 
+is still preserved in the normal flow.
+
+This value cannot be used for 
+table cells,
+columns,
+column groups,
+rows,
+row groups,
+or captions.*/
+
+/*Absolute Positioning
+An absolute position element is positioned 
+relative to the first parent element 
+that has a position other than static. 
+If no such element is found, the containing block is <html>.
+
+Absolutely positioned elements are removed from the normal flow. 
+The document and other elements behave like the 
+absolutely positioned element does not exist.
+Absolutely positioned elements can overlap other elements.
+*/
+
+p.fixed_for_absolute{
+    width: 350px;
+    border: 1px black solid;
+    position: relative;
+ }
+ span.absolute {
+    background: green;
+    color:white;
+    position: relative;
+    top: 100px;
+    left: 50px;
+ }
+
+/*Floating*/
+
+/*With CSS float, an element can be pushed to the left or right,
+allowing other elements to wrap around it.
+Float is often used with images, 
+but it is also useful when working with layouts.
+The values for the float property are 
+left, right, and none. 
+
+none (the default) ensures that the element will not float. */
+
+img {
+    float: right;
+ }
+
+/*Elements are floated horizontally, 
+meaning that an element can only be floated left or right, not up or down.*/
+
+/*If you place several floating elements one after the other, 
+they will float next to each other if there is enough room.
+To do that the 2 elemets must have the same width*/
+
+/*The clear Property*/
+
+/*The clear property specifies the sides of an element
+where other floating elements are not allowed to be.*/
+
+.floating {
+   float: right;
+}
+
+/*
+clear: both;
+both is used to clear floats coming from either direction. */
+
+.floating {
+   float: right;
+}
+.clearing {    
+   clear: both;
+}
+
+/*The overflow Property*/
+
+/*Every element on the page is a box.
+If the height of the box is not set, 
+the height of that box will grow as large as necessary
+to accommodate the content. */
+
+div.overflow {
+   width: 150px;
+   height: 150px;
+   background-color: LightBlue;
+   float: left;
+ }
+
+ /*The CSS overflow property specifies the behavior
+that occurs when an element's content overflows the element's box.*/
+
+div.scroll {
+   width: 150px;
+   height: 150px;
+   background-color: LightBlue;
+   float: left;
+   overflow: scroll;
+}
+
+/*auto - If overflow is clipped, 
+a scroll-bar should be added to make it possible to see the rest of the content.
+hidden - The overflow is clipped, 
+and the rest of the content will be invisible.*/
+
+div.hidden {
+   width: 150px;
+   height: 150px;
+   background-color: LightBlue;
+   float: left;
+   overflow: hidden;
+}
+
+/*The z-index property specifies the stack order of an element
+(which element should be placed in front of, or behind, the others).*/
+
+.blue { 
+   background-color: #8EC4D0;
+   margin-bottom: 15px;
+   width: 120px;
+   height: 120px;
+   color: #FFF;
+}
+.red {
+   background-color: #FF4D4D;
+   position: relative;
+   width: auto;
+   height: 120px;
+   color: #FFF;
+   font-size: 40px;
+   margin-top: -50px;
+   margin-left: 50px;
+}
+
+.bluez {
+   background-color: #8EC4D0;
+   width: auto;
+   height: 120px;
+   color: #FFF;
+   font-size: 40px;
+   margin-bottom: 15px;
+   z-index: 3; 
+   position: relative;
+}
+.redz {
+   background-color:  #FF4D4D;
+   margin-top: -50px;
+   margin-left: 50px;
+   color: #FFF;
+   z-index: 2;
+   position: relative;
+   height: 120px;
+}
+
+/*The z-index works only on positioned elements 
+(position:absolute, position:relative, or position:fixed).*/

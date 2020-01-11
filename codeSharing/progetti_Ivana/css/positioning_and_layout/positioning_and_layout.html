@@ -1,0 +1,139 @@
+<html>
+   <head> 
+    <title>Positioning & Layout</title>
+   </head>
+   <body>
+    <link rel="stylesheet" href="positioning_and_layout.css">
+    <h1>The display property </h1>
+        <span><strong>display: block;</strong></span>
+        <span>It display the inline &ltspan&gt elements</span>
+        <span>as block-level elements.</span>
+        <p><strong>display: inline;</strong></p>
+        <p class="inline">This are 3</p>
+        <p class="inline">different <strong>inline</strong></p>
+        <p class="inline">pharagraphs.</p>
+        <h2>This text will not display, as we set the value to none.</h2>
+        <p><strong>display:none;</strong> hides an element</p>
+        <p>Headline of this paragraph is not displayed.</p>
+    <h1>The visibility Property</h1>
+        <strong>visibility:hidden; </strong>
+        <div class="hidden">
+            This text will not display in browser.
+        </div>
+        <p>
+            The space above this paragraph is empty because 
+            the visibility of the div element is set to hidden.
+        </p>
+    <h1>Positioning Elements</h1>
+        <p><strong>position:static;</strong></p>
+        <p class="position_static">This paragraph has a static position.</p>
+        <p><strong>position:fixed;</strong></p>
+        <p class="position_fixed">This paragraph is fixed to 600px from the top and 800px from the left.</p>
+    <h1>Relative Positioning</h1>
+
+        <p><strong>position: relative;</strong></p>
+        <p class="fixed_for_relative">the content inside the &ltspan&gt
+            <span class="relative">
+                paragraph span content with relative position
+            </span>of this paragraph has a relatve position
+        </p>
+        <div class="hidden_for_relative">
+             <p>This text will not display in browser.</p>
+        </div>
+    <h1>Absolute Positioning</h1>
+        <p><strong>position: absolute;</strong></p>
+        <p class="fixed_for_absolute">the content inside the &ltspan&gt
+            <span class="absolute">
+                paragraph span content with absolute position
+            </span>of this fixed paragraph has an absolute position
+        </p>
+        <div class="hidden_for_relative">
+                <p>This text will not display in browser.</p>
+        </div>
+    <h1>Floating</h1>
+        <p><strong>float: right; float: left; float: none;</strong></p>
+        <p><img src="https://images.unsplash.com/photo-1578156452880-83cd1b463aa9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+            This paragraph has an image that is floated to the <strong>right.</strong> 
+            It is highly recommended to add a margin to images so that the text does 
+            not get too close to the image. If you want your text to be easily read, you 
+            should always add a few pixels between words and borders, images, 
+            and other content. 
+        </p>
+        <div class="hidden_for_relative">
+                <p>This text will not display in browser.</p>
+        </div>
+    <h1>The clear Property</h1>
+        This paragraph is above the div element 
+        and is not affected by the float right property. 
+        <br /><br />
+        <div class="floating">
+            <img src="https://images.unsplash.com/photo-1578170681526-de18d598a5b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+        </div>
+        This paragraph comes after the div element 
+        and is affected by the float right property. 
+        <br /><br />
+        This paragraph also comes after the div element
+        and is affected by the float right property.
+        <br /> <br />
+        <div class="hidden_for_relative">
+            <p>This text will not display in browser.</p>
+        </div>
+        <p><strong>clear: both;</strong></p>
+        This paragraph is above the div element 
+        and is not affected by the float right property. 
+        <br/><br/>
+        <div class="floating">
+            <img src="https://images.unsplash.com/photo-1578171006856-5b73c9ff0501?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+        </div>
+        This paragraph comes after the div element 
+        and is affected by the float right property. 
+        <br/><br class="clearing"/>
+        This paragraph is out of the floating group 
+        and is not affected by the float right property.
+        <br/> <br/>        
+        <div class="hidden_for_relative">
+            <p>This text will not display in browser.</p>
+        </div>
+    <h1>The overflow Property</h1>
+        <div class="overflow">
+            This text is inside the div element, which has a blue 
+            background color and is floated to the left. We set a specific 
+            height and width for the div element, and as you can see, 
+            the content cannot fit. 
+        </div>        
+        <br/> <br/> 
+        <div class="hidden_for_relative">
+            <p>This text will not display in browser.</p>
+        </div> 
+        <p><strong>overflow: scroll;</strong></p>
+        <div class="scroll">
+            This text is inside the div element, which has a blue 
+            background color and is floated to the left. We set a specific 
+            height and width for the div element, and as you can see, 
+            the content cannot fit. 
+        </div>
+        <div class="hidden_for_relative">
+            <p>This text will not display in browser.</p>
+        </div>
+        <p><strong>overflow: hidden;</strong></p>       
+        <div class="hidden">
+            This text is inside the div element, which has a blue 
+            background color and is floated to the left. We set a specific 
+            height and width for the div element, and as you can see, 
+            the content cannot fit. 
+        </div>
+        <div class="hidden_for_relative">
+            <p>This text will not display in browser.</p>
+        </div>
+        <div class="blue">Blue Box</div>
+        <div class="red">This red box overlaps the blue box, because it was placed later in the HTML markup.
+            The z-index property can change this order.
+        </div>
+        <strong>   z-index: integer; </strong>
+        <div class="bluez">This Blue box overlaps the red box, because it was set with z-index: 3</div>
+        <div class="redz">Red Box
+        </div>
+
+
+   </body>
+ </html>

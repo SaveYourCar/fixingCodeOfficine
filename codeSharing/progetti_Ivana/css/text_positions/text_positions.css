@@ -1,0 +1,52 @@
+/*The text-align Property*/
+p.left {
+    text-align: left;
+ }
+p.right {
+    text-align: right;
+ }
+p.center {
+    text-align: center;
+ }
+ p.justify {
+    text-align: justify;
+ }
+/*The vertical-align Property */
+td.top {
+    vertical-align: top;
+ }
+td.middle {
+    vertical-align: middle;
+ }
+td.bottom {
+    vertical-align: bottom;
+ }
+span.baseline {
+    vertical-align: baseline;
+}
+span.sub {
+    vertical-align: sub;
+}
+span.super {
+    vertical-align: super;
+}
+    /*N.B. Instead of px values, you can use pt (points),
+    cm (centimeters) and % (percentage) values.*/
+span.pixel { 
+    vertical-align: -10px;
+}
+    /*Some additional CSS styling is needed for div elements.*/
+.main {
+    height: 150px; width: 400px;
+    background-color: LightSkyBlue;
+    display: inline-table;
+}
+.paragraph {
+    display: table-cell;
+    vertical-align: middle;
+}
+/*The text-indent Property */
+p {
+    text-indent: 60px;
+ }
+    /*The first line will be indented to the left if the value is negative.*/

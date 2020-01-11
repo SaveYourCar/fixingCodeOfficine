@@ -1,0 +1,73 @@
+/*fonts-families*/
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+p.sansserif {
+    font-family: Helvetica, Arial, sans-serif;
+}
+p.monospace {
+    font-family: "Courier New", Courier, monospace;
+}
+p.cursive {
+    font-family: Florence, cursive;
+}
+p.fantasy {
+    font-family: Blippo, fantasy;
+}
+/*sizes*/
+p.small {
+    font-size: small;
+ }
+p.medium {
+    font-size: medium;
+ }
+p.large {
+    font-size: large;
+ }
+p.xlarge {
+    font-size: x-large;
+ }
+/*To calculate the em size: em = pixels / 16*/
+h2 {
+    font-size: 1.25em; 
+ }
+/*fonts-styles*/
+p.normal {
+    font-style: normal;
+ }
+p.italic {
+    font-style: italic;
+ }
+p.oblique {
+    font-style: oblique;
+ }
+/*fonts-weight*/
+p.light {   
+    font-weight: lighter;
+ }
+p.bold {   
+    font-weight: bold;
+ }
+p.bolder {
+    font-weight: bolder;
+ }
+p.thicker {
+    font-weight: 700;
+ }
+/*fonts-variants*/
+p.normal {
+    font-variant: normal;
+ }
+p.small {
+    font-variant: small-caps;
+ }
+/*fonts-colors*/
+p.example {
+    color: green;
+ }
+h3 {
+    color: #0000FF;
+ }
+p.example2 {
+    color: rgb(255,0,0);
+ }
