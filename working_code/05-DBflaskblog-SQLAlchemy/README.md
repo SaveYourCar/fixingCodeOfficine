@@ -29,3 +29,27 @@ date_posted = db.Column(db.Datetime, nullable=False, default=datetime.utcnow)
 -from flaskblog import db + invio
 -db.create_all()
 <si deve creare un file site.db nella directory principale>
+-importare i models User e Post con
+    from flaskblog import User, Post
+
+#aggiungere dati al DB
+esempio user_1 user_2
+>>> from flaskblog import db
+>>> db.create_all() <dopo questo comando si crea il db site.db nella main folder>
+>>> from flaskblog import User, Post
+>>> user_1 = User(username='Marco', email='marco@demo.com', password='ciao2')  
+>>> db.session.add(user_1)
+>>> user_2 = User(username='Luigi', email='luigi@demo.com', password='ciao3') 
+>>> db.session.add(user_2) 
+>>> db.session.commit()
+>>> 
+
+
+
+db.session.add(user_1) <predispone i dati per essere aggiunti>
+
+db.session.commit() <invia i dati al database>
+
+#per fare una queri del DB
+User.query.all()
+
