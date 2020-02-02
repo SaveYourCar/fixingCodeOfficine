@@ -118,3 +118,10 @@ body {
     left:50%;
     transform: translate(-50%,-50%);
   }
+
+  svg .rouded-circle{
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    max-width: 140 px; 
+    max-height: 140px
+  }

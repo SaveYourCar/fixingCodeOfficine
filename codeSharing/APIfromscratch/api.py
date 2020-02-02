@@ -1,4 +1,4 @@
-"""API base per l'iserimento, il reupero, l'aggiornamento e l'eliminazione
+"""API base per l'iserimento, il recupero, l'aggiornamento e l'eliminazione
 dati in un db sqlite gestito con SQLAlquemy tramite Flask"""
 
 from flask import Flask, jsonify, request, abort
