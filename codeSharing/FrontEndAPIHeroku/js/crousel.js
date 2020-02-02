@@ -295,7 +295,7 @@ function userDetails(id){
               <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">\
               <image x="0" y="0" width="140" height="140" style="display: block; width: 100%; height: 100%; object-fit: cover;" xlink:href="'+user.avatar+'"/></svg>\
               <h2>'+user.name+'</h2>\
-              <h3>'+user.description+'</h3>\
+              <p class="description">'+user.description+'</p>\
               <p><a onclick="closeDetails('+id+')" class="btn btn-primary col-lg-4 col-xs-4 col-md-4 col-sm-4" href="javascript:void(0)" role="button"><i class="fa fa-window-close-o" aria-hidden="true"></i></a>\
               </p>\
               </div>';
@@ -342,8 +342,8 @@ function loadUsers(page){
       for(let i=0; i<user.length;i++){
           container.innerHTML+='<div id="user_'+user[i].id+'" class="col-lg-4 col-xs-12 col-md-12 col-sm-12">\
           <div class="intro">\
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">\
-          <image x="0" y="0" width="140" height="140" style="display: block; width: 100%; height: 100%; object-fit: cover;" xlink:href="'+user[i].avatar+'"/></svg>\
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140" style="background: url('+user[i].avatar+') center; background-size: cover;">\
+          </svg>\
           <h2>'+user[i].name+'</h2>\
           <p>'+user[i].email+'</p>\
           <p><a onclick="userDetails('+user[i].id+')" class="btn btn-success col-lg-2 col-xs-1 col-md-1 col-sm-1" href="javascript:void(0)" role="button"><i class="fa fa-eye" aria-hidden="true"></i></a>\
