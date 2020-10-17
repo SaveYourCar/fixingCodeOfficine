@@ -28,7 +28,7 @@ def article(id):
     for item in Articles:
         print(item['id'],id,item['id'] == id)
         if item['id'] == int(id):
-            return render_template('article.html', article=item)
+            return render_template('article.html', article=item, title=item['title'])
 
 
 
