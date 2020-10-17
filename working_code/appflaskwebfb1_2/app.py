@@ -20,7 +20,15 @@ def articles():
 
 @app.route('/article/<string:id>')
 def article(id):
-    return render_template('article.html', id=id, title='Article One')
+    # Con questo for cerco quale dei dizionari in Articles
+    # ha come chiave id, quella passata nell'url.
+    # Trovato il giusto elemento, lo invio per intero al template.
+    # In questo modo posso accedere, dal template, ad ogniuna delle sue chiavi.
+    # ( id, title, body, etc..)
+    for item in Articles:
+        print(item['id'],id,item['id'] == id)
+        if item['id'] == int(id):
+            return render_template('article.html', article=item)
 
 
 
