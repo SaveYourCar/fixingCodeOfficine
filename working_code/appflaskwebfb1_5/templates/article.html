@@ -1,0 +1,10 @@
+{% extends 'layout.html'%}
+{% block body %}
+<article>
+    <h2><span>{{ article.id }}</span>&ensp;{{ article.title }}</h2>
+    <p>{{ article.body }}</p>
+    <p style="display: flex; justify-content: end;">
+        <span>{{ article.author + ', ' + article.create_date }}</span>
+    </p>
+</article>
+{% endblock %}
